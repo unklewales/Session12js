@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing element of a multidimensional array using loop</title>
+</head>
+<body>
+  <h1>Accessing element of a multidimensional array using loop</h1>  
+
+  <script>
+    /*const products = [["monitor", "30,000", "Yes"], ["keyboard","2000", "No"], ["mouse", "1500", "Yes"]];
+
+document.write(`<table border="1">`);//printed table
+    document.write(`<tr><th>Item</th><th>Price</th><th>InStock</th><tr>`);//printed the headings
+
+        for (let i = 0; i< products.length; i++) {
+         document.write("<tr>");
+            //create 
+            for (let j = 0; j < products[i].length; j++) {
+                document.write(`<td>${products[i][j]}</td>`);
+                
+            } 
+            document.write("</tr>") ; 
+            
+        }
+
+        document.write("</table>");*/
+        /*const eplTable = [["Man Utd(C)","38","43","89","10","36","13","7(4)","19,687","377"], ["Man City","38","32","78","11","31","18","6(4)","20,060","470"],["Chelsea","38","36","75","10","26","14","11(9)","18,417","399"],["Arsenal","38","35","73","12","32","14","6(5)","21,111","383"],["Tottenham","38","20","72","11","26","9","0","16,647","392"], ["Everton","38","15","63","9","22","11","2(2)","15,814","446"],["Liverpool","38","28","61","5","27","16","6(5)","19,802","402"],["West brom","38","-4","49","4","21","8","7(5)","14,358","437"], ["Swansea","38","-4","46","6","23","10","0","19,944","409"], ["West Ham","38","-8","46","5","18","11","4(4)","12,571","470"]];
+
+        document.write(`<table border="1">`);
+    document.write(`<tr><th></th><th>P</th><th>GD</th><th>Total points</th><th>PtsVtop4</th><th>PtsVbottom6</th><th>Cleansheets</th><th>Penalties(scored)</th><th>Total passes</th><th>Total fouls</th><tr>`);
+        for (let i= 0; i < eplTable.length; i++) {
+            document.write("<tr>");
+                for (let j = 0; j < eplTable[i].length; j++) {
+                
+                    document.write(`<td>${eplTable[i][j]}</td>`)
+                } 
+            
+        }
+        document.write("</table>");*/
+        const item1 = {"name": "monitor", 
+                       "Price":"30000",
+                        "Instock": "Yes"};
+        const item2 = {"name": "Keyboard", 
+                       "Price":"2000",
+                        "Instock": "No"}
+
+
+        const item3 = {
+                       "name": "mouse", 
+                       "Price":"1500",
+                        "Instock": "No"}
+
+        const Arr = [item1, item2, item3];
+        document.write(`<table border="1">`);//printed table
+    document.write(`<tr><th>Item</th><th>Price</th><th>InStock</th><tr>`);
+        for (let i = 0; i< Arr.length; i++) {
+         document.write("<tr>");
+            document.write(`<td>${Arr[i].name}</td>`);
+            document.write(`<td>${Arr[i].Price}</td>`);
+            document.write(`<td>${Arr[i].Instock}</td>`);
+            document.write("</tr>");
+        }
+        document.write("</table>")            
+  </script>
+</body>
+</html>
